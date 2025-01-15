@@ -1,43 +1,153 @@
 nav {
-    display: flex;
-    margin: 0 auto;
+  display: flex;
+  margin: 0 auto;
 }
 header {
-    display: flex;
-    background-color: rgb(241, 144, 27);
-    padding: 10px 10px;
+  display: flex;
+  background-color: rgb(241, 144, 27);
+  padding: 10px 10px;
+  border-radius: 10px;
+  box-shadow: -5px 15px 40px 1px;
 }
 .navs {
-    display: flex;
-    width: 100%;
-    margin-right: 0 auto;
-    padding-top: 40px;
-    justify-content: flex-end;
+  display: flex;
+  width: 100%;
+  margin-right: 0 auto;
+  padding-top: 40px;
+  justify-content: flex-end;
 }
 a {
-    padding-left: 35px;
-    font-size:large;
-    font-family:Arial, Helvetica, sans-serif;
-    color: black;
-    text-decoration: none;
-    padding-right: 30px;
-
+  padding-left: 35px;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-decoration: none;
+  padding-right: 30px;
+  font-weight: bolder;
 }
 body {
-    background-color: rgba(255, 166, 0, 0.846);
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
+  background-color: rgba(255, 166, 0, 0.846);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  box-shadow: black 3px;
 }
 .week {
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: large;
-    display: flex;
-    padding: 10px 20px 10px 20px;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 6em;
+  display: block;
+  padding: 10px 20px 10px 40px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 0.2px;
 }
 .bottom {
+  display: flex;
+  padding-left: 80px;
+}
+.hero-image {
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+  box-shadow: -5px 15px 40px 1px;
+}
+.recipe-image {
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  border-radius: 100px;
+  box-shadow: 1px 1px 10px 1px;
+}
+.gallery {
+  width: 0;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px;
+}
+.gallery2 {
+  max-width: 400px;
+  max-height: 400px;
+  padding: 10px;
+  font-weight: 600;
+  background-color: rgb(241, 144, 27);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 1px;
+  border-style: groove;
+}
+.gallery-p h1 {
+  display: block;
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 1px 10px 1px;
+  text-align: inherit;
+}
+.align {
+    margin-left: 12%;
+}
+.prgh {
+  max-width: 400px;
+  font-weight: 600;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 5px 1px 10px 1px;
+  align-items: center;
+}
+.prgh2 {
+    max-width: 400px;
+    font-weight: 600;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 5px 1px 10px 1px;
+    align-items: flex-end;
+}
+.healthy{
+  border-radius: 10px;
+  display: block;
+  justify-content: flex-end;
+  box-shadow: 5px 1px 10px 1px;
+  height: 0 auto;
+  padding: 5px 10px 5px 10px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 600;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 5px 1px 10px 1px;
+  text-align: center;
+} 
+h1 {
+    text-align: center;
+    display: block;
+}
+.imgofweek {
+  padding: 20px;
+  font-weight: 600;
+  background-color: rgb(241, 144, 27);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 1px;
+  border-style: groove;
+  display: block;
+  justify-content: flex-end;
+}
+.allimg1{
     display: flex;
-    margin-left: 40%;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: flex-start;
+}
+.allimg2 {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: flex-end;
 }
