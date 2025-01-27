@@ -6,8 +6,14 @@ header {
   display: flex;
   background-color: rgb(241, 144, 27);
   padding: 10px 10px;
-  border-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   box-shadow: -5px 15px 40px 1px;
+}
+p {
+  display: flex;
 }
 .navs {
   display: flex;
@@ -26,9 +32,9 @@ a {
   font-weight: bolder;
 }
 body {
-  background-color: rgba(255, 166, 0, 0.846);
+  background-color: rgba(255, 237, 178, 0.698);
   background-repeat: no-repeat;
-  display: flex;
+  display: grid;
   justify-content: center;
   box-shadow: black 3px;
 }
@@ -37,20 +43,26 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 6em;
-  display: block;
+  display: grid;
   padding: 10px 20px 10px 40px;
   border-radius: 10px;
   box-shadow: 1px 1px 10px 0.2px;
+  text-align: center;
+  position: absolute;
 }
 .bottom {
   display: flex;
   padding-left: 80px;
+  position: relative;
 }
 .hero-image {
   justify-content: center;
   width: 100%;
   height: auto;
-  border-radius: 50px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
   box-shadow: -5px 15px 40px 1px;
 }
 .recipe-image {
@@ -68,26 +80,29 @@ body {
 }
 .gallery2 {
   max-width: 400px;
-  max-height: 400px;
+  max-height: 300px;
+  min-width: 400px;
+  min-height: 300px;
   padding: 10px;
   font-weight: 600;
   background-color: rgb(241, 144, 27);
   border-radius: 10px;
   box-shadow: 1px 1px 10px 1px;
   border-style: groove;
+  text-align: center;
 }
 .gallery-p h1 {
-  display: block;
+  display: grid;
   font-size: xx-large;
   font-family: Arial, Helvetica, sans-serif;
   padding: 5px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 5px 1px 10px 1px;
-  text-align: inherit;
+  margin-bottom: 20px;
 }
 .align {
-    margin-left: 12%;
+  margin-left: 12%;
 }
 .prgh {
   max-width: 400px;
@@ -97,19 +112,22 @@ body {
   padding: 5px;
   margin: 5px;
   box-shadow: 5px 1px 10px 1px;
-  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
 }
 .prgh2 {
-    max-width: 400px;
-    font-weight: 600;
-    background-color: white;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 5px;
-    box-shadow: 5px 1px 10px 1px;
-    align-items: flex-end;
+  max-width: 400px;
+  font-weight: 600;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 5px 1px 10px 1px;
+  align-items: flex-end;
+  display: grid;
+  text-align: center;
+  margin-bottom: 35px;
 }
-.healthy{
+.healthy {
   border-radius: 10px;
   display: block;
   justify-content: flex-end;
@@ -119,15 +137,13 @@ body {
   margin-top: 20px;
   text-align: center;
   font-weight: 600;
-  background-color: white;
   border-radius: 10px;
   padding: 5px;
   box-shadow: 5px 1px 10px 1px;
-  text-align: center;
-} 
+}
 h1 {
-    text-align: center;
-    display: block;
+  text-align: center;
+  display: block;
 }
 .imgofweek {
   padding: 20px;
@@ -139,15 +155,109 @@ h1 {
   display: block;
   justify-content: flex-end;
 }
-.allimg1{
-    display: flex;
-    text-align: center;
-    margin: 0 auto;
-    justify-content: flex-start;
+.allimg1 {
+  display: block;
 }
 .allimg2 {
-    display: flex;
-    text-align: center;
-    margin: 0 auto;
-    justify-content: flex-end;
+  display: block;
+}
+.main {
+  display: grid; /* Use CSS Grid */
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 90px;
+}
+.week {
+  position: absolute;
+}
+.text-img {
+  position: relative;
+  background-image: url(/images/burger.jpg);
+  z-index: -100em;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.top {
+  position: absolute;
+  bottom: 20%;
+  left: 36%;
+  max-width: 400px;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.894);
+  border-radius: 2px;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 1px 1px 1px 1px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 3.6em;
+}
+.t-title {
+  font-size: 2em;
+  font-weight: bold;
+}
+.img-footer {
+  background-color: rgb(180, 175, 175);
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 1em;
+}
+.instructions {
+  font-size: medium;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-width: auto;
+  width: 150px;
+  position: absolute;
+  background-color: rgb(180, 175, 175);
+  width: 100%;
+  margin: 0;
+  right: 1em;
+}
+.instructions2 {
+  font-size: medium;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-width: auto;
+  width: 150px;
+  position: absolute;
+  left: 30%;
+  background-color: rgb(180, 175, 175);
+  width: 100%;
+}
+.instructions3 {
+  font-size: medium;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-width: auto;
+  width: 150px;
+  position: absolute;
+  left: 55%;
+  background-color: rgb(180, 175, 175);
+  width: 100%;
+}
+.col {
+  display: block;
+}
+
+.f-center {
+  left: 50%;
+}
+.bottom {
+  width: 100%;
+  padding-left: 0;
+  margin: 0;
+}
+.padds {
+  padding-left: 37px;
 }
